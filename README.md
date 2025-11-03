@@ -67,4 +67,11 @@ This project implements a comprehensive text analysis pipeline for Chinese news 
 
 ## Results
 
+**Classification Performance:**
+```
+Accuracy: 97%
+Precision: 0.97 (weighted avg)
+Recall: 0.97 (weighted avg)
+F1-Score: 0.97 (weighted avg)
+```
 Chinese News Text Analysis with BERT - NLP pipeline for Chinese news: clustering, classification (97% accuracy), and semantic search using BERT embeddings on 16K+ THUCNews documents. Features KMeans, PCA visualization, and Chinese-to-English translation with MarianMT.
