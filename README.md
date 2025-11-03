@@ -1,38 +1,39 @@
-Chinese News Text Analysis with BERT
+# Chinese News Text Analysis with BERT
+
 A natural language processing project for Chinese news text analysis, featuring document clustering, classification, and semantic search using BERT embeddings. Developed during a machine learning research internship.
-Overview
+
+## Overview
+
 This project implements a comprehensive text analysis pipeline for Chinese news articles:
+- **Document Clustering**: Unsupervised grouping using KMeans on BERT embeddings
+- **Text Classification**: Fine-tuned BERT model for multi-class classification
+- **Semantic Search**: Cosine similarity-based document retrieval
+- **Dimensionality Reduction**: PCA visualization of high-dimensional embeddings
+- **Translation**: Chinese-to-English text translation using MarianMT
 
-Document Clustering: Unsupervised grouping using KMeans on BERT embeddings
-Text Classification: Fine-tuned BERT model for multi-class classification
-Semantic Search: Cosine similarity-based document retrieval
-Dimensionality Reduction: PCA visualization of high-dimensional embeddings
-Translation: Chinese-to-English text translation using MarianMT
+## Dataset
 
-Dataset
+- **Source**: THUCNews (Tsinghua University Chinese News Corpus)
+- **Category**: Sports News (体育)
+- **Size**: 16,896 documents
+- **Language**: Chinese
 
-Source: THUCNews (Tsinghua University Chinese News Corpus)
-Category: Sports News (体育)
-Size: 16,896 documents
-Language: Chinese
+## Technical Stack
 
-Technical Stack
+- **Deep Learning**: PyTorch, Transformers (Hugging Face)
+- **Models**: 
+  - BERT (bert-base-uncased) for text embeddings
+  - BertForSequenceClassification for classification
+  - MarianMT (Helsinki-NLP) for translation
+- **ML Libraries**: Scikit-learn (KMeans, PCA, StandardScaler)
+- **Visualization**: Matplotlib
 
-Deep Learning: PyTorch, Transformers (Hugging Face)
-Models:
-
-BERT (bert-base-uncased) for text embeddings
-BertForSequenceClassification for classification
-MarianMT (Helsinki-NLP) for translation
-
-
-ML Libraries: Scikit-learn (KMeans, PCA, StandardScaler)
-Visualization: Matplotlib
-
-Repository Structure
+## Repository Structure
+```
 ├── BertClassification&Clustering.ipynb    # Clustering, classification, search
 ├── BertGeneration.ipynb                   # Text translation (Chinese to English)
 └── README.md
+```
 
 ## Features
 
@@ -63,3 +64,7 @@ Repository Structure
 - Preserves paragraph and sentence structure
 - GPU-accelerated inference
 - Processes documents with Chinese period (。) as delimiter
+
+## Results
+
+Chinese News Text Analysis with BERT - NLP pipeline for Chinese news: clustering, classification (97% accuracy), and semantic search using BERT embeddings on 16K+ THUCNews documents. Features KMeans, PCA visualization, and Chinese-to-English translation with MarianMT.
